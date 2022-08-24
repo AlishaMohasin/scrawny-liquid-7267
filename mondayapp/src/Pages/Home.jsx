@@ -6,10 +6,12 @@ import Supportings from '../Components/Supportings'
 import Topsec from '../Components/Topsec'
 import Video from '../Components/Video'
 import Workflowimage from '../Components/Workflowimage'
+import Navbar from '../Route/Navbar'
 
 const Home = () => {
   return (
-      <div>
+    <div>
+      <Navbar/>
       <Topsec />
       <Logocom />
       <Workflowimage />
