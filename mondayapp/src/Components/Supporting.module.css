@@ -1,0 +1,21 @@
+.main{
+    display: flex;
+}
+.h1{
+    font-size: 34px;
+    margin-left: 100px;
+    margin-top: 40px;
+    color: #24252a;
+}
+.span{
+    font-size: 34px;
+    font-weight: bold;
+    color: #24252a;
+}
+.h11{
+    font-size: 21px;
+    margin-left: 100px;
+   
+    color: #24252a;
+
+}

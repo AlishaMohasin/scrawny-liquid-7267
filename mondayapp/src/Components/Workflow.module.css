@@ -1,0 +1,18 @@
+.main{
+    display: flex;
+}
+.h1{
+    font-size: 34px;
+    color:#5c5c5c
+}
+.span{
+    font-size: 34px;
+    color:#5c5c5c;
+    font-weight: bold;
+
+}
+.h11{
+    font-size: 24px;
+    color:#5c5c5c
+
+}
