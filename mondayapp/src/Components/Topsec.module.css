@@ -33,3 +33,10 @@
     font-size: 23px;
     font-weight: bold;
 }
+.btn{
+    width:200px;
+    --background: linear-gradient(90deg, #579bfccc 0%, #6C6CFFcc 100%);
+    --background-hover: linear-gradient(90deg, #4982d3cc 0%, #5a5ad5cc 100%);
+    --text-color: #ffffff;
+    border-radius: 2rem;
+}

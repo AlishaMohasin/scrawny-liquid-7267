@@ -1,0 +1,41 @@
+.main{
+    display: flex;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgb(0, 1, 51) 0%, rgb(15, 16, 72) 100%);
+         padding-top: 40px;
+        height: 1200px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        border-bottom-left-radius: 50%;
+   
+}
+.h1{
+    font-size: 34px;
+    margin-left: 40px;
+    margin-top: 30px;
+    align-items: initial;
+}
+.span{
+    font-size: 34px;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-weight: bold;
+    align-items: initial;
+
+}
+.h11{
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 30px;
+    align-items: initial;
+
+}
+.img{
+    margin-left: 40px;
+    margin-top: 50px;
+}
+.h12{
+    margin-left: 40px;
+    margin-top: 50px;
+
+}
