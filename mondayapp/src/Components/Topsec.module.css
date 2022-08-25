@@ -5,6 +5,7 @@
         height: 600px;
        
         margin-bottom: 16px;
+       
         
      
        
@@ -39,4 +40,7 @@
     --background-hover: linear-gradient(90deg, #4982d3cc 0%, #5a5ad5cc 100%);
     --text-color: #ffffff;
     border-radius: 2rem;
+}
+.position{
+    position: relative;
 }
