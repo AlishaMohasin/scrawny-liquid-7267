@@ -2,7 +2,9 @@
     height: 70px;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    display: flex;
+   
+   position: fixed;
+   background-color: white;
 }
 .logo{
     height: 42px;
@@ -10,4 +12,24 @@
     margin: 0px 16px 16px 16px;
     cursor: pointer;
     align-self: center;
+    margin-top: 15px;
+}
+.hamberger{
+    margin-top: 15px;
+    cursor: pointer;
+    display: none;
+
+}
+@media screen and (max-width:987){
+    .hamberger{
+        display: block;
+    }
+    .main{
+        position: absolute;
+        right:0px;
+        display:flex;
+        flex-direction: column;
+    }
+   
+
 }
