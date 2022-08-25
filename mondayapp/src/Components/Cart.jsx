@@ -6,9 +6,9 @@ import styled from "./Topsec.module.css";
 
 const Cart = () => {
   return (
-    <div>
-      <Flex margin={"auto"} marginLeft="80px" gap="2rem" marginTop={"30px"}>
-        <Box w="250px" h="350px" boxShadow={"xl"} borderRadius="2xl">
+    <div className={style.blue}>
+      <Flex margin={"auto"} marginLeft="80px" gap="2rem" marginTop={"-200px"}>
+        <Box w="250px" h="350px" boxShadow={"md"} borderRadius="2xl" bg="white">
           <Image
             src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/trust.png"
             w="100px"
@@ -27,10 +27,11 @@ const Cart = () => {
             platform I've ever seen.”
           </h1>
         </Box>
-        <Box w="250px" h="350px" boxShadow={"xl"} borderRadius="2xl">
+        <Box w="250px" h="350px" boxShadow={"md"} borderRadius="2xl" bg="white">
           <Image
             src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/forrester.png"
             w="100px"
+            h="71px"
             margin={"auto"}
             marginTop="20px"
           />
@@ -42,7 +43,7 @@ const Cart = () => {
             Impact™ Report
           </h1>
         </Box>
-        <Box w="250px" h="350px" boxShadow={"xl"} borderRadius="2xl">
+        <Box w="250px" h="350px" boxShadow={"md"} borderRadius="2xl" bg="white">
           <Image
             src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/capterra.png"
             w="100px"
@@ -61,7 +62,7 @@ const Cart = () => {
             team builder.”
           </h1>
         </Box>
-        <Box w="250px" h="350px" boxShadow={"xl"} borderRadius="2xl">
+        <Box w="250px" h="350px" boxShadow={"md"} borderRadius="2xl" bg="white">
           <Image
             src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/g2.png"
             w="100px"
@@ -81,6 +82,13 @@ const Cart = () => {
           </h1>
         </Box>
       </Flex>
+      <h1 className={style.h21}>
+        Deliver your best work{" "}
+        <span className={style.span}>with monday.com</span>
+      </h1>
+      <h1 className={style.h31}>
+        No credit card needed ✦ Unlimited time on Free plan
+      </h1>
     </div>
   );
 };

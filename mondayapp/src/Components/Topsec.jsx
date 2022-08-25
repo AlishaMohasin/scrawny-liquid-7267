@@ -15,13 +15,14 @@ const Topsec = () => {
           What would you like to manage with monday.com Work OS?
         </h3>
         <Iconblock />
-
+<Box className={style.position}>
         <Button
           w="200px"
           bg="#6a6dff"
           borderRadius="2rem"
           marginTop="20px"
           _hover={{ bg: "#6e71cc" }}
+        
         >
           Get started{" "}
           <svg
@@ -36,7 +37,8 @@ const Topsec = () => {
               d="M4.628.616a.5.5 0 1 0-.64.768L6.203 3.23H.5a.5.5 0 0 0 0 1h5.612L3.988 6a.5.5 0 1 0 .64.769l3.23-2.693a.5.5 0 0 0 0-.768L4.628.616z"
             ></path>
           </svg>
-        </Button>
+          </Button>
+          </Box>
 
         <p style={{marginTop:"8px"}}>No credit card needed ✦ Unlimited time on Free plan</p>
       </Box>

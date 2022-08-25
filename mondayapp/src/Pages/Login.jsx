@@ -13,6 +13,7 @@ import {
   Heading,
   Text,
   useColorModeValue,
+  Spinner,
 } from "@chakra-ui/react";
 
 import styled from "./Login.module.css";
@@ -24,7 +25,8 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   //   const [data, setdata] = useState([]);
   const [Logincred, setlogincred] = useState({ email: "", password: "" });
-  const navigate = useNavigate();
+    const navigate = useNavigate();
+ 
 
   //   useEffect(() => {
   //     getsignindata().then((res) => setdata(res.data));
@@ -46,9 +48,15 @@ const Login = () => {
           item.password === Logincred.password &&
           item.email === Logincred.email
         ) {
-          alert("Login successfull");
+           
+                
+                alert("Login successfull");
           navigate("/dashboard");
-        }
+                 
+            
+          
+          }
+          
       })
     );
   }
@@ -119,7 +127,7 @@ const Login = () => {
                       }}
                       onClick={handlesubmit}
                     >
-                      Login
+                   Login 
                     </Button>
                   </FormControl>
                 </Stack>

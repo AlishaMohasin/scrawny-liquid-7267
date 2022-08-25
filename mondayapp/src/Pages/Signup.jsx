@@ -12,6 +12,7 @@ import {
   Input,
   Box,
   Checkbox,
+  Spinner,
 } from "@chakra-ui/react";
 import axios from "axios";
 import { getsignindata } from "./Api";
@@ -19,7 +20,9 @@ import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const navigate = useNavigate();
+    const navigate = useNavigate();
+    const [spin, setspin] = useState(false);
+    const[isloading,setloading]=useState(false)
 
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
@@ -38,9 +41,17 @@ const Signup = () => {
   }
   function handlesubmit(e) {
     e.preventDefault();
-    axios.post("https://alishapi.herokuapp.com/Signup", signincred).then(() => {
-      getsignindata();
-      navigate("/login");
+      axios.post("https://alishapi.herokuapp.com/Signup", signincred).then(() => {
+        
+          getsignindata()
+         
+            navigate("/login");
+             
+       
+           
+              
+      
+      
     });
   }
 
@@ -65,8 +76,7 @@ const Signup = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            
             d="M4.628.616a.5.5 0 1 0-.64.768L6.203 3.23H.5a.5.5 0 0 0 0 1h5.612L3.988 6a.5.5 0 1 0 .64.769l3.23-2.693a.5.5 0 0 0 0-.768L4.628.616z"
           ></path>
         </svg>
@@ -142,7 +152,7 @@ const Signup = () => {
                 marginTop={"20px"}
                 onClick={handlesubmit}
               >
-                Continue
+              Continue 
               </Button>
               <hr marginTop={"20px"} />
               <p style={{ color: "gray", textAlign: "center" }}>or</p>
