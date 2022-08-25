@@ -30,8 +30,8 @@ const Supportings = () => {
             <Flex marginTop={"40px"}>
               <Image
                 src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/phone.png"
-                w={"70px"}
-                h="50px"
+                w={"60px"}
+                h="40px"
               />
 
               <Box>
@@ -49,9 +49,9 @@ const Supportings = () => {
           <Box style={{ marginLeft: "30px" }}>
             <Flex marginTop={"40px"}>
               <Image
-                src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/phone.png"
-                w={"70px"}
-                h="50px"
+                src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/heart.png"
+                w={"60px"}
+                h="40px"
               />
 
               <Box>
@@ -70,9 +70,9 @@ const Supportings = () => {
           <Box style={{ marginLeft: "30px" }}>
             <Flex marginTop={"40px"}>
               <Image
-                src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/phone.png"
-                w={"70px"}
-                h="50px"
+                src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/fast.png"
+                w={"60px"}
+                h="40px"
               />
 
               <Box>
