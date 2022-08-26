@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import style from "./nav.module.css"
 import { Button } from '@chakra-ui/react'
+import { Authcontext } from '../Context/Authcontext'
 
 const Nav = () => {
+  const{state,logout}=useContext(Authcontext)
     return (
       <nav className={style.main} >
       <div className={style.logo}>
@@ -10,7 +12,7 @@ const Nav = () => {
             </div>
 
             <div className={style.logo}>
-                <Button><img src="https://thumbs.dreamstime.com/b/logout-vector-icon-logo-design-193333071.jpg" width="100px"/></Button>
+                <Button onClick={logout}><img src="https://thumbs.dreamstime.com/b/logout-vector-icon-logo-design-193333071.jpg" width="100px"/></Button>
             </div>
             </nav>
   )
