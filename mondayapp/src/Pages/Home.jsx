@@ -1,5 +1,6 @@
 import React from "react";
 import Cart from "../Components/Cart";
+import { Footer } from "../Components/Footer";
 import Logocom from "../Components/Logocom";
 import Rating from "../Components/Rating";
 import Supportings from "../Components/Supportings";
@@ -19,6 +20,7 @@ const Home = () => {
       <Supportings />
       <Rating />
       <Cart />
+      <Footer/>
     </div>
   );
 };

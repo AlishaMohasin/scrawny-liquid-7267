@@ -7,13 +7,16 @@ import { ChakraProvider } from "@chakra-ui/react";
 import {BrowserRouter} from "react-router-dom"
 import { AuthcontextProvider } from './Context/Authcontext';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ChakraProvider>
       <BrowserRouter>
         <AuthcontextProvider>
-          <App />
+         
+            <App />
+           
           </AuthcontextProvider>
         </BrowserRouter>
       </ChakraProvider>
