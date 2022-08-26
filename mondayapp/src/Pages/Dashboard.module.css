@@ -1,0 +1,19 @@
+.firstblock{
+    height:40px;
+    width: 100%;
+    color: white;
+    background-color: #0073ea;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+   
+}
+.h3{
+    margin-top: 3px;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+ 
+    width:100%
+
+}

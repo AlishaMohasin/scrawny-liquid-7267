@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import style from "../Route/Navbar.module.css";
 import {
   Flex,
@@ -21,12 +21,13 @@ import styled from "./Login.module.css";
 import Signup from "./Signup";
 import { getsignindata } from "./Api";
 import { useNavigate } from "react-router-dom";
+import { Authcontext } from "../Context/Authcontext";
 
 const Login = () => {
   //   const [data, setdata] = useState([]);
   const [Logincred, setlogincred] = useState({ email: "", password: "" });
-    const navigate = useNavigate();
- 
+  const navigate = useNavigate();
+  const { state, login } = useContext(Authcontext);
 
   //   useEffect(() => {
   //     getsignindata().then((res) => setdata(res.data));
@@ -48,15 +49,10 @@ const Login = () => {
           item.password === Logincred.password &&
           item.email === Logincred.email
         ) {
-           
-                
-                alert("Login successfull");
+          alert("Login successfull");
+          login(Logincred.email);
           navigate("/dashboard");
-                 
-            
-          
-          }
-          
+        }
       })
     );
   }
@@ -127,7 +123,7 @@ const Login = () => {
                       }}
                       onClick={handlesubmit}
                     >
-                   Login 
+                      Login
                     </Button>
                   </FormControl>
                 </Stack>
