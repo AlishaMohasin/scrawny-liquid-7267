@@ -3,13 +3,29 @@ import React, { useContext, useEffect, useState } from "react";
 import { Authcontext } from "../Context/Authcontext";
 import style from "./Dashboard.module.css";
 import Nav from "../Components/Nav"
+import Taskbutton from "../Components/Taskbutton";
+import axios from "axios";
+import Tabular from "../Components/Tabular";
 
 const Dashboard = () => {
   const { state } = useContext(Authcontext);
   const [data, setdata] = useState([]);
+
+
+  const getdata = () => {
+    return axios.get("https://alishapi.herokuapp.com/tickets")
+    .then((res)=>setdata(res.data))
+  }
   useEffect(() => {
+    getdata()
     
-  })
+  }, [])
+  
+  function handledelete(id) {
+    return axios.delete(`https://alishapi.herokuapp.com/tickets/${id}`)
+    .then(()=>getdata())
+}
+ 
   
   return <div>
     <Box className={style.firstblock}>
@@ -20,9 +36,13 @@ const Dashboard = () => {
     </Box>
     <Box display={"flex"}>
       <Nav/>
-     <Box overflow={"scroll"} w="100%" h="80vh">
-    <h1>My products</h1>
-      <div>
+     <Box  w="100%" h="80vh">
+        <Taskbutton />
+       
+        <div>
+          <Tabular data={data} handledelete={handledelete }/>
+
+
     
         </div>
         </Box>
