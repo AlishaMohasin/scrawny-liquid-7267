@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Button, Input } from "@chakra-ui/react";
 import React, { useContext, useEffect, useState } from "react";
 import { Authcontext } from "../Context/Authcontext";
 import style from "./Dashboard.module.css";
@@ -10,6 +10,8 @@ import Tabular from "../Components/Tabular";
 const Dashboard = () => {
   const { state } = useContext(Authcontext);
   const [data, setdata] = useState([]);
+  const[text,settext]=useState("")
+
 
 
   const getdata = () => {
@@ -38,6 +40,7 @@ const Dashboard = () => {
       <Nav/>
      <Box  w="100%" h="80vh">
         <Taskbutton />
+        <Input placeholder="search" w="40%" margin={"auto"} onChange={(e) => settext(e.target.value)} value={text}/> <Button bg="#6e71cc" color="white">Search</Button>
        
         <div>
           <Tabular data={data} handledelete={handledelete }/>
