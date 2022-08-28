@@ -59,7 +59,7 @@ const Tabular = ({ data,handledelete }) => {
                 </Td>
                 <Td>{ele.timestamp}</Td>
                 <Td>
-                  <Button onClick={()=>handledelete(ele.id)} >X</Button>
+                  <Button onClick={()=>handledelete(`${ele.id}`)} >X</Button>
                 </Td>
               
               </Tr>
