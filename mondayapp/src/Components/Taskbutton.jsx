@@ -14,6 +14,7 @@ import {
     useDisclosure
   } from '@chakra-ui/react'
 import axios from "axios"
+import { getdata, postdata } from '../Pages/Api'
 
 let initialdata = {
     category: "",
@@ -46,22 +47,13 @@ const Taskbutton = () => {
     }
 
     function handlesubmit(e) {
-        e.preventDefault();
-        axios.post("https://alishapi.herokuapp.com/tickets", formdata)
-            .then(() => {
-            getdata()
-            })
-            .catch((err) => {
-            console.log(err)
-        })
+      e.preventDefault();
+      alert("Added new task")
+      postdata(formdata)
+      formdata(initialdata)
+        
     }
-    const getdata = () => {
-        return axios.get("https://alishapi.herokuapp.com/tickets")
-        .then((res)=>console.log(res.data))
-
-    }
-
-
+    
    
   return (
       <div>
