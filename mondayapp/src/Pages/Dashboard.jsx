@@ -1,10 +1,9 @@
-import { Box, Button, Input, Spacer } from "@chakra-ui/react";
+import { Box, Button, Input } from "@chakra-ui/react";
 import React, { useContext, useEffect, useState } from "react";
 import { Authcontext } from "../Context/Authcontext";
 import style from "./Dashboard.module.css";
 import Nav from "../Components/Nav";
 import Taskbutton from "../Components/Taskbutton";
-import axios from "axios";
 import Tabular from "../Components/Tabular";
 import { deletedata, getdata } from "./Api";
 import {useSearchParams} from "react-router-dom"

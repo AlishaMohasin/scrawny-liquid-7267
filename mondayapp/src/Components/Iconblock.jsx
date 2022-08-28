@@ -1,4 +1,4 @@
-import { Box, Checkbox, Flex, Input, Image } from "@chakra-ui/react";
+import { Box,  Flex, Image } from "@chakra-ui/react";
 import React from "react";
 import style from "./Iconblock.module.css";
 

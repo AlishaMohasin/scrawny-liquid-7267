@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Image } from "@chakra-ui/react";
+import { Box, Button,Image } from "@chakra-ui/react";
 import React from "react";
 import Iconblock from "./Iconblock";
 import style from "./Topsec.module.css";
