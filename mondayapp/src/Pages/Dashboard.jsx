@@ -7,16 +7,17 @@ import Taskbutton from "../Components/Taskbutton";
 import axios from "axios";
 import Tabular from "../Components/Tabular";
 import { deletedata, getdata } from "./Api";
+import {useSearchParams} from "react-router-dom"
 
 const Dashboard = () => {
   const { state } = useContext(Authcontext);
- 
+ let [searchParams,setsearchParams]=useSearchParams()
   const [data, setdata] = useState([]);
-  const [text, settext] = useState("");
-  const [sort, setsort] = useState("");
+  const [text, settext] = useState(searchParams.get("q")||"");
+  const [sort, setsort] = useState(searchParams.get("sort")||"");
 
   const handlegetdata = (sort) => {
-    getdata(text, sort)
+    getdata({ text, sort })
       .then((res) => setdata(res.data))
       .catch((err) => {
         console.log(err);
@@ -26,11 +27,14 @@ const Dashboard = () => {
     setsort(val);
   }
   useEffect(() => {
-    handlegetdata(sort);
-  }, [sort]);
+    handlegetdata({text, sort });
+  }, [text,sort]);
+  useEffect(() => {
+    setsearchParams({q:text,sort})
+  },[text,sort])
 
-  const handlesearch = (text) => {
-    getdata(text).then((res) => setdata(res.data));
+  const handlesearch = ({ text, sort }) => {
+    getdata({ text, sort }).then((res) => setdata(res.data));
   };
 
   const handledelete = (id) => {
@@ -59,7 +63,7 @@ const Dashboard = () => {
             <Button
               bg="#6e71cc"
               color="white"
-              onClick={() => handlesearch(text)}
+              onClick={() => handlesearch({ text,sort })}
             >
               Search
             </Button>
