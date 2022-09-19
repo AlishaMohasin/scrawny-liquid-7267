@@ -22,7 +22,11 @@ It includes automation capabilities and supports integrations with other work ap
 
 
 ## Tech Stack used:
-HTML,CSS,Javascript,ReactJs,Heroku,Vercel,Router Router,context-API
+HTML,CSS,Javascript,ReactJs,Heroku,Vercel,Router Router,context-API.
+
+
+##home page:
+
 
 
 
