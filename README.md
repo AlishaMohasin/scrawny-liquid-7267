@@ -25,16 +25,16 @@ It includes automation capabilities and supports integrations with other work ap
 HTML,CSS,Javascript,ReactJs,Heroku,Vercel,Router Router,context-API.
 
 
-##home page:
+## home page:
 ![Screenshot (1554)](https://user-images.githubusercontent.com/97678545/191048324-44ad68ff-f3c4-4819-a633-e24ca884477a.png)
 
 ## signup
 ![Screenshot (1625)](https://user-images.githubusercontent.com/97678545/191050124-99b328c2-0297-4e68-960f-a4bd0310ad7e.png)
 
-##login page
+## login page
 ![Screenshot (1627)](https://user-images.githubusercontent.com/97678545/191050621-6d82de8f-7acb-4022-b0ea-1d7fa83ed595.png)
 
-##dashboard:
+## dashboard:
 ![Screenshot (1629)](https://user-images.githubusercontent.com/97678545/191052226-099a0cf8-98ca-4087-8926-ac2f0985536a.png)
 
 
