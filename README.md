@@ -16,8 +16,8 @@ It includes automation capabilities and supports integrations with other work ap
 ## Pages & Features 👇
 
  - ### Home Page : Nav Bar,Footer.
- - ### Login/Signup : User authentication to check whether user email and password match with details existing in the database.
- - ### Dashbord page : User can add new task, apply sorting ,search based on the task ,delete task and view the priority and task status 
+ - ### Login/Signup : User authentication to check whether user email and password and if the used is authenticated redirected to dashboard page.
+ - ### Dashbord page :(Private route page-Authenticated user can only access dashboard )User can add new task, apply sorting ,search based on the task ,delete task and view the priority and task status 
 
 
 
@@ -32,6 +32,16 @@ HTML,CSS,Javascript,ReactJs,Heroku,Vercel,Router Router,context-API.
 ![Screenshot (1625)](https://user-images.githubusercontent.com/97678545/191050124-99b328c2-0297-4e68-960f-a4bd0310ad7e.png)
 
 ##login page
+![Screenshot (1627)](https://user-images.githubusercontent.com/97678545/191050621-6d82de8f-7acb-4022-b0ea-1d7fa83ed595.png)
+
+##dashboard:
+![Screenshot (1629)](https://user-images.githubusercontent.com/97678545/191052226-099a0cf8-98ca-4087-8926-ac2f0985536a.png)
+
+
+
+
+
+
 
 
 
