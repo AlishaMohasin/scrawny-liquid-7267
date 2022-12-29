@@ -41,7 +41,7 @@ const Signup = () => {
   }
   function handlesubmit(e) {
     e.preventDefault();
-      axios.post("https://alishapi.herokuapp.com/Signup", signincred).then(() => {
+      axios.post("https://muddy-train-bass.cyclic.app/Signup", signincred).then(() => {
         
           getsignindata()
          
