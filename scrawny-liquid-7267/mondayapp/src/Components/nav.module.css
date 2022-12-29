@@ -1,0 +1,19 @@
+.main{
+    height:200vh;
+    width:80px;
+    background-color: 
+    #292f4c;
+    color:white;
+    display:flex;
+    text-align: center;
+    flex-direction:column;
+    justify-content: space-between;
+    
+   
+ 
+}
+.logo{
+    padding:40px 25px ;
+    display:flex;
+    flex-direction:column;
+}

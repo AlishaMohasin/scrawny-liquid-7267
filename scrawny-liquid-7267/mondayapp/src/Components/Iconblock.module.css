@@ -1,0 +1,181 @@
+/* box1 */
+.box1 {
+  justify-content: unset;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px 8px 16px 8px;
+  height: calc(100% - 16px);
+
+  -webkit-transition: border 0.1s ease-in-out;
+  transition: border 0.1s ease-in-out;
+}
+
+.box1:hover {
+  border: 1px solid rgb(255, 21, 138);
+}
+
+.svgdiv1 {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  background-color: rgb(255, 21, 138);
+}
+/* box2 */
+.box2 {
+  justify-content: unset;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px 8px 16px 8px;
+  height: calc(100% - 16px);
+
+  -webkit-transition: border 0.1s ease-in-out;
+  transition: border 0.1s ease-in-out;
+}
+.box2:hover {
+  border: 1px solid rgb(0, 200, 117);
+}
+.svgdiv2 {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  background-color: rgb(0, 200, 117);
+}
+/* box3 */
+.box3 {
+  justify-content: unset;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px 8px 16px 8px;
+  height: calc(100% - 16px);
+
+  -webkit-transition: border 0.1s ease-in-out;
+  transition: border 0.1s ease-in-out;
+}
+.box3:hover {
+  border: 1px solid rgb(255, 153, 0);
+}
+.svgdiv3 {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  background-color: rgb(255, 153, 0);
+}
+/* box4 */
+.box4 {
+  justify-content: unset;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px 8px 16px 8px;
+  height: calc(100% - 16px);
+
+  -webkit-transition: border 0.1s ease-in-out;
+  transition: border 0.1s ease-in-out;
+}
+.box4:hover {
+  border: 1px solid rgb(0, 210, 210);
+}
+.svgdiv4 {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  background-color: rgb(0, 210, 210);
+}
+/* box5 */
+.box5 {
+  justify-content: unset;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px 8px 16px 8px;
+  height: calc(100% - 16px);
+
+  -webkit-transition: border 0.1s ease-in-out;
+  transition: border 0.1s ease-in-out;
+}
+.box5:hover {
+  border: 1px solid rgb(87, 155, 252);
+}
+.svgdiv5 {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  background-color: rgb(87, 155, 252);
+}
+/* box 6 */
+.box6 {
+  justify-content: unset;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px 8px 16px 8px;
+  height: calc(100% - 16px);
+
+  -webkit-transition: border 0.1s ease-in-out;
+  transition: border 0.1s ease-in-out;
+}
+.box6:hover {
+  border: 1px solid rgb(108, 108, 255);
+}
+.svgdiv6 {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  background-color: rgb(108, 108, 255);
+}
+
+/* common style */
+.p {
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 85%;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.flex {
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  gap: 0.25rem;
+}
