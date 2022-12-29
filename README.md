@@ -8,7 +8,7 @@ Hello Everyone !🌏 I'm presenting my individual  Project - clone of monday.com
 Monday.com is a customizable web and mobile work management platform, designed to help teams and organizations with operational efficiency by tracking projects and workflows, visualizing data, and team collaboration. 
 It includes automation capabilities and supports integrations with other work apps.
 
-🚀 The Live link for the same is here : https://alin-omega.vercel.app/
+🚀 The Live link for the same is here : https://elaborate-valkyrie-de70f3.netlify.app/
 
 
 
